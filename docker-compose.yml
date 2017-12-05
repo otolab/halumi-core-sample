@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+
+  halumi-core:
+    image: otolab/halumi-core
+
+    environment:
+      TZ: 'Asia/Tokyo'
+      SERVER_MODE: "rpc"
+
+    volumes:
+      - knp-dict:/usr/local/share/knp
+      - jumanpp-dict:/usr/local/share/jumanpp
+
+    ports:
+      - 8081:8080
+
+
+volumes:
+  jumanpp-dict:
+  knp-dict:

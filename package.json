@@ -1,0 +1,18 @@
+{
+  "name": "halumi-core-sample",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:otolab/halumi-core-sample.git",
+  "author": "Naoto Kato <naoto.kato@plaid.co.jp>",
+  "license": "MIT",
+  "dependencies": {
+    "halumi-core": "https://github.com/otolab/halumi-core.git",
+    "promisify": "^0.0.3"
+  },
+  "scripts": {
+    "up": "docker-compose up -d",
+    "down": "docker-compose down",
+    "clean": "docker-compose down -v",
+    "log": "docker-compose logs -f"
+  }
+}
